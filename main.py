@@ -1,12 +1,12 @@
 import tkinter as tk
 import nltk
 from textblob import TextBlob
-from newspaper import article
+from newspaper import Article
 
 # Download model
 nltk.download('punkt')
 
-url = ''
+url = 'https://www.bbc.com/news/world-middle-east-64631354'
 
 # Pass url into article, creating an article object focused on url
 article = Article(url)
