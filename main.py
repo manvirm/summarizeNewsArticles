@@ -23,6 +23,14 @@ print(f'Authors {article.authors}')
 print(f'Publication Date: {article.publish_date}')
 print(f'Summary: {article.summary}')
 
+# Sentiment Analysis
 analysis = TextBlob(article.text)
 print(analysis.polarity)
 print(f'Sentiment: {"positive" if analysis.polarity > 0 else "negative" if analysis.polarity < 0 else "neutral"}')
+
+# GUI 
+root = tk.Tk()
+root.title("News Summarizer")
+root.geometry('1200x1600')
+
+root.mainloop()
