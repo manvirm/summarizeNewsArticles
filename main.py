@@ -33,4 +33,25 @@ root = tk.Tk()
 root.title("News Summarizer")
 root.geometry('1200x1600')
 
+# Display title, author, published data
+
+tlabel = tk.Label(root, text = "Title")
+tlabel.pack()
+title = tk.Text(root, height=1, width=140)
+title.pack()
+
+alabel = tk.Label(root, text = "Author")
+alabel.pack()
+
+author = tk.Text(root, height=1, width=140)
+author.config(state='disabled', bg='#dddddd')
+author.pack()
+
+plabel = tk.Label(root, text="Published Date")
+plabel.pack()
+
+publication = tk.Text(root, height=1, width=140)
+publication.config(state= 'disabled', bg='#dddddd')
+publication.pack()
+
 root.mainloop()
